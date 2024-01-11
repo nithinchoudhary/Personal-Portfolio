@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nithin Choudhary - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">   
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><a href="index.html">Nithin's Portfolio</a></div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Hi I'm <span class="nameColor">Nithin Choudhary</span>,
+                <div>weaving wonders in</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn" onclick="openGithub()">Github</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <div class="image-frame">
+                    <img src="ab.png" alt="">
+                </div>                
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['code', 'web', 'with the power of AI'],
+          typeSpeed: 50,
+          backSpeed: 30,
+          loop:true,
+        });
+        function openGithub() {
+            window.open('https://github.com/nithinchoudhary','_blank')
+        }
+
+    </script>
+</body>
+</html>
