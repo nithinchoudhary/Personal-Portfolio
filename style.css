@@ -96,3 +96,28 @@ nav ul li a:hover {
 #element {
     color: rgb(174, 111, 233);
 }
+
+@media (max-width: 600px) {
+    nav {
+        height: auto;
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    .firstSection {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .leftSection {
+        width: 100%;
+    }
+
+    .rightSection {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
